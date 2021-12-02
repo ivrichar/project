@@ -26,8 +26,10 @@ class Board(object):
         self.board[column].append(piece)
 
 
+    #input: column (as an integer)
+    # output: boolean value
     def isValidMove(self, column):
-        return 
+        return len(self.board[column]) < 5
 
 
     def children(self):
