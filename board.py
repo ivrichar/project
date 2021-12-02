@@ -12,6 +12,7 @@ class Board(object):
             return
 
         else:
+            #board starts as an array of empty lists
             self.board = [[] for x in range(self.WIDTH)]
             self.numMoves = 0
             self.lastMove = None
@@ -24,6 +25,9 @@ class Board(object):
         self.numMoves += 1
         self.board[column].append(piece)
 
+
+    def isValidMove(self, column):
+        return 
 
 
     def children(self):
