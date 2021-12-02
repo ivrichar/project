@@ -29,7 +29,7 @@ class Board(object):
     #input: column (as an integer)
     # output: boolean value
     def isValidMove(self, column):
-        return len(self.board[column]) < 5
+        return len(self.board[column]) < 6
 
 
     def children(self):
