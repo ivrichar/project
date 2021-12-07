@@ -31,6 +31,14 @@ class Board(object):
     def isValidMove(self, column):
         return len(self.board[column]) < 6
 
+    # return all non-full columns (columns whose length is < 6)
+    def getAllValidMoves(self):
+        results = []
+        for i in range(7):
+            if len(self.board[i]) < 6:
+                results.append(i)
+        return results        
+
 
     def children(self):
         children = []
